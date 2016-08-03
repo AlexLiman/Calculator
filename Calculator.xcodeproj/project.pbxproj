@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F99B691D52566300982655 /* HMSegmentedControl in Resources */ = {isa = PBXBuildFile; fileRef = 84F99B681D52566300982655 /* HMSegmentedControl */; };
+		84F99B6D1D525CB000982655 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99B641D52562700982655 /* QuartzCore.framework */; };
+		84F99B6E1D525CB000982655 /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F99B641D52562700982655 /* QuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F99B8C1D5276B000982655 /* ViewControllerLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F99B8B1D5276B000982655 /* ViewControllerLogIn.m */; };
+		84F99BB41D528C8100982655 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F99BB31D528C8100982655 /* KeyboardViewController.m */; };
+		84F99BB81D528C8100982655 /* customKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84F99BB01D528C8100982655 /* customKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F7AB5441D51706D00E7FF23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7AB5431D51706D00E7FF23 /* main.m */; };
 		8F7AB5471D51706D00E7FF23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7AB5461D51706D00E7FF23 /* AppDelegate.m */; };
 		8F7AB54A1D51706D00E7FF23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7AB5491D51706D00E7FF23 /* ViewController.m */; };
@@ -22,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		84F99BB61D528C8100982655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7AB5371D51706D00E7FF23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F99BAF1D528C8100982655;
+			remoteInfo = customKeyboard;
+		};
 		8F7AB55C1D51706D00E7FF23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F7AB5371D51706D00E7FF23 /* Project object */;
@@ -38,12 +51,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84F99B6F1D525CB000982655 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84F99B6E1D525CB000982655 /* QuartzCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F99BBC1D528C8100982655 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84F99BB81D528C8100982655 /* customKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03919E02EE22901AFDB9C160 /* Pods-CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorUITests/Pods-CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0FAA0A27A4D44685808BFED2 /* libPods-CalculatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalculatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1578E78D408703393C3BAF8D /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		5A6A723E94924B8A848D1CA4 /* libPods-Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AA0ABD95AFF96E67DAF7D0 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		84F99B641D52562700982655 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84F99B681D52566300982655 /* HMSegmentedControl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HMSegmentedControl; sourceTree = "<group>"; };
+		84F99B8A1D5276B000982655 /* ViewControllerLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLogIn.h; sourceTree = "<group>"; };
+		84F99B8B1D5276B000982655 /* ViewControllerLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLogIn.m; sourceTree = "<group>"; };
+		84F99B911D52803500982655 /* customKayboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = customKayboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F99BB01D528C8100982655 /* customKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = customKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F99BB21D528C8100982655 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		84F99BB31D528C8100982655 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		84F99BB51D528C8100982655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AA09D7900D4923AD8302D05 /* libPods-CalculatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalculatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7AB53F1D51706D00E7FF23 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7AB5431D51706D00E7FF23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,10 +115,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84F99B8E1D52803500982655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F99BAD1D528C8100982655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F7AB53C1D51706D00E7FF23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F99B6D1D525CB000982655 /* QuartzCore.framework in Frameworks */,
 				BDA72842672FF5B6014846F1 /* libPods-Calculator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,11 +160,31 @@
 		3F326EBC05D44BF37D663CE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84F99B641D52562700982655 /* QuartzCore.framework */,
 				5A6A723E94924B8A848D1CA4 /* libPods-Calculator.a */,
 				8AA09D7900D4923AD8302D05 /* libPods-CalculatorTests.a */,
 				0FAA0A27A4D44685808BFED2 /* libPods-CalculatorUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F99B861D52764900982655 /* ViewControllerLogIn */ = {
+			isa = PBXGroup;
+			children = (
+				84F99B8A1D5276B000982655 /* ViewControllerLogIn.h */,
+				84F99B8B1D5276B000982655 /* ViewControllerLogIn.m */,
+			);
+			name = ViewControllerLogIn;
+			sourceTree = "<group>";
+		};
+		84F99BB11D528C8100982655 /* customKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84F99BB21D528C8100982655 /* KeyboardViewController.h */,
+				84F99BB31D528C8100982655 /* KeyboardViewController.m */,
+				84F99BB51D528C8100982655 /* Info.plist */,
+			);
+			path = customKeyboard;
 			sourceTree = "<group>";
 		};
 		8F7AB5361D51706D00E7FF23 = {
@@ -111,6 +193,7 @@
 				8F7AB5411D51706D00E7FF23 /* Calculator */,
 				8F7AB55E1D51706D00E7FF23 /* CalculatorTests */,
 				8F7AB5691D51706D00E7FF23 /* CalculatorUITests */,
+				84F99BB11D528C8100982655 /* customKeyboard */,
 				8F7AB5401D51706D00E7FF23 /* Products */,
 				E2FB83E6D926F303576943EE /* Pods */,
 				3F326EBC05D44BF37D663CE4 /* Frameworks */,
@@ -123,6 +206,8 @@
 				8F7AB53F1D51706D00E7FF23 /* Calculator.app */,
 				8F7AB55B1D51706D00E7FF23 /* CalculatorTests.xctest */,
 				8F7AB5661D51706D00E7FF23 /* CalculatorUITests.xctest */,
+				84F99B911D52803500982655 /* customKayboard.appex */,
+				84F99BB01D528C8100982655 /* customKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,10 +215,12 @@
 		8F7AB5411D51706D00E7FF23 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				84F99B861D52764900982655 /* ViewControllerLogIn */,
 				8F7AB5451D51706D00E7FF23 /* AppDelegate.h */,
 				8F7AB5461D51706D00E7FF23 /* AppDelegate.m */,
 				8F7AB5481D51706D00E7FF23 /* ViewController.h */,
 				8F7AB5491D51706D00E7FF23 /* ViewController.m */,
+				84F99B681D52566300982655 /* HMSegmentedControl */,
 				8F7AB54B1D51706D00E7FF23 /* Main.storyboard */,
 				8F7AB5511D51706D00E7FF23 /* Assets.xcassets */,
 				8F7AB5531D51706D00E7FF23 /* LaunchScreen.storyboard */,
@@ -186,6 +273,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84F99B901D52803500982655 /* customKayboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F99B9A1D52803500982655 /* Build configuration list for PBXNativeTarget "customKayboard" */;
+			buildPhases = (
+				84F99B8D1D52803500982655 /* Sources */,
+				84F99B8E1D52803500982655 /* Frameworks */,
+				84F99B8F1D52803500982655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = customKayboard;
+			productName = customKayboard;
+			productReference = 84F99B911D52803500982655 /* customKayboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		84F99BAF1D528C8100982655 /* customKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F99BBB1D528C8100982655 /* Build configuration list for PBXNativeTarget "customKeyboard" */;
+			buildPhases = (
+				84F99BAC1D528C8100982655 /* Sources */,
+				84F99BAD1D528C8100982655 /* Frameworks */,
+				84F99BAE1D528C8100982655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = customKeyboard;
+			productName = customKeyboard;
+			productReference = 84F99BB01D528C8100982655 /* customKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8F7AB53E1D51706D00E7FF23 /* Calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F7AB56F1D51706D00E7FF23 /* Build configuration list for PBXNativeTarget "Calculator" */;
@@ -196,10 +317,13 @@
 				8F7AB53D1D51706D00E7FF23 /* Resources */,
 				7D9BF98A6F5F605D31F27D23 /* [CP] Embed Pods Frameworks */,
 				C2E5F01BD63A1A447382C959 /* [CP] Copy Pods Resources */,
+				84F99B6F1D525CB000982655 /* Embed Frameworks */,
+				84F99BBC1D528C8100982655 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				84F99BB71D528C8100982655 /* PBXTargetDependency */,
 			);
 			name = Calculator;
 			productName = Calculator;
@@ -256,6 +380,12 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = lindeman;
 				TargetAttributes = {
+					84F99B901D52803500982655 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					84F99BAF1D528C8100982655 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					8F7AB53E1D51706D00E7FF23 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -285,15 +415,32 @@
 				8F7AB53E1D51706D00E7FF23 /* Calculator */,
 				8F7AB55A1D51706D00E7FF23 /* CalculatorTests */,
 				8F7AB5651D51706D00E7FF23 /* CalculatorUITests */,
+				84F99B901D52803500982655 /* customKayboard */,
+				84F99BAF1D528C8100982655 /* customKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84F99B8F1D52803500982655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F99BAE1D528C8100982655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F7AB53D1D51706D00E7FF23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F99B691D52566300982655 /* HMSegmentedControl in Resources */,
 				8F7AB5551D51706D00E7FF23 /* LaunchScreen.storyboard in Resources */,
 				8F7AB5521D51706D00E7FF23 /* Assets.xcassets in Resources */,
 				8F7AB54D1D51706D00E7FF23 /* Main.storyboard in Resources */,
@@ -440,10 +587,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84F99B8D1D52803500982655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F99BAC1D528C8100982655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F99BB41D528C8100982655 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F7AB53B1D51706D00E7FF23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F99B8C1D5276B000982655 /* ViewControllerLogIn.m in Sources */,
 				8F7AB54A1D51706D00E7FF23 /* ViewController.m in Sources */,
 				8F7AB5501D51706D00E7FF23 /* Calculator.xcdatamodeld in Sources */,
 				8F7AB5471D51706D00E7FF23 /* AppDelegate.m in Sources */,
@@ -470,6 +633,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		84F99BB71D528C8100982655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F99BAF1D528C8100982655 /* customKeyboard */;
+			targetProxy = 84F99BB61D528C8100982655 /* PBXContainerItemProxy */;
+		};
 		8F7AB55D1D51706D00E7FF23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8F7AB53E1D51706D00E7FF23 /* Calculator */;
@@ -502,6 +670,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84F99B9B1D52803500982655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = customKayboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex-liman.Calculator.customKayboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84F99B9C1D52803500982655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = customKayboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex-liman.Calculator.customKayboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84F99BB91D528C8100982655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = customKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex-liman.Calculator.customKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84F99BBA1D528C8100982655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = customKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex-liman.Calculator.customKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		8F7AB56D1D51706D00E7FF23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -663,6 +875,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84F99B9A1D52803500982655 /* Build configuration list for PBXNativeTarget "customKayboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F99B9B1D52803500982655 /* Debug */,
+				84F99B9C1D52803500982655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F99BBB1D528C8100982655 /* Build configuration list for PBXNativeTarget "customKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F99BB91D528C8100982655 /* Debug */,
+				84F99BBA1D528C8100982655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8F7AB53A1D51706D00E7FF23 /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
