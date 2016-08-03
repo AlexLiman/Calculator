@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,93 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMd-EX-Xp4">
+                                <rect key="frame" x="0.0" y="28" width="600" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYT-OX-yfC">
+                                        <rect key="frame" x="18" y="50" width="148" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="148" id="Sie-4v-YMw">
+                                                <variation key="heightClass=regular" constant="145"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.3411764706" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lYT-OX-yfC" secondAttribute="bottom" constant="88" id="Ugq-Pf-RqG">
+                                        <variation key="heightClass=regular" constant="79"/>
+                                    </constraint>
+                                    <constraint firstItem="lYT-OX-yfC" firstAttribute="top" secondItem="dMd-EX-Xp4" secondAttribute="top" constant="50" id="g10-Xd-BGv">
+                                        <variation key="heightClass=regular" constant="37"/>
+                                    </constraint>
+                                    <constraint firstItem="lYT-OX-yfC" firstAttribute="leading" secondItem="dMd-EX-Xp4" secondAttribute="leading" constant="18" id="mOe-Ia-yjo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vk-Gy-Sxz">
+                                <rect key="frame" x="0.0" y="198" width="600" height="402"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kff-c1-iRV">
+                                        <rect key="frame" x="243" y="117" width="114" height="50"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="58d-Jd-f2Z"/>
+                                            <constraint firstAttribute="width" constant="114" id="rnX-Sz-MLr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="CALCULATE">
+                                            <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kff-c1-iRV" firstAttribute="top" secondItem="3Vk-Gy-Sxz" secondAttribute="top" constant="117" id="F9l-ep-QKm">
+                                        <variation key="heightClass=regular" constant="125"/>
+                                    </constraint>
+                                    <constraint firstItem="Kff-c1-iRV" firstAttribute="centerX" secondItem="3Vk-Gy-Sxz" secondAttribute="centerX" id="VEu-Yg-O9X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13311224146955156" green="0.27739702919473302" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dMd-EX-Xp4" secondAttribute="trailing" id="10V-7X-XmE"/>
+                            <constraint firstItem="dMd-EX-Xp4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AiM-IO-JK9"/>
+                            <constraint firstItem="dMd-EX-Xp4" firstAttribute="leading" secondItem="3Vk-Gy-Sxz" secondAttribute="leading" id="JtM-M3-7H3"/>
+                            <constraint firstItem="3Vk-Gy-Sxz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="198" id="NSS-Oq-1b1">
+                                <variation key="heightClass=regular" constant="173"/>
+                            </constraint>
+                            <constraint firstItem="3Vk-Gy-Sxz" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="afG-Zu-0KF"/>
+                            <constraint firstItem="dMd-EX-Xp4" firstAttribute="trailing" secondItem="3Vk-Gy-Sxz" secondAttribute="trailing" id="gws-5v-vYL"/>
+                            <constraint firstItem="3Vk-Gy-Sxz" firstAttribute="top" secondItem="dMd-EX-Xp4" secondAttribute="bottom" id="vjb-7X-YQp">
+                                <variation key="heightClass=regular" constant="2"/>
+                            </constraint>
+                            <constraint firstItem="dMd-EX-Xp4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yAD-PB-w6D"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewForTextLabel" destination="3Vk-Gy-Sxz" id="YFX-PV-4Uj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="366.75"/>
         </scene>
     </scenes>
 </document>
